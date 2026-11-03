@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Assignment 6: a jQuery investigation with 21 guests, 20 cases and a missing birthday cake.">
+  <title>The Missing Cake | Task 2</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/vendor/jquery-3.7.1.min.js" defer></script>
+  <script src="../assets/party-data.js" defer></script>
+  <script src="../assets/cases.js" defer></script>
+  <script src="../assets/app.js" defer></script>
+  <script src="motion.js" defer></script>
+</head>
+<body data-task="2">
+  <header class="topbar">
+    <a class="brand" href="../"><span class="brand-mark">6</span> Web Technology / Assignment 6</a>
+    <nav aria-label="Tasks"><a href="../task1/" >01 · Selectors</a><a href="../task2/" aria-current="page">02 · Motion</a></nav>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">The birthday party / A jQuery investigation</p><h1 id="page-title">The missing cake.</h1>
+      <p>Four rooms. Twenty-one guests. One cake gone at 21:30.<br>Follow the clues and find out who took it.</p></div>
+      <div class="party-time">PARTY / 19:30–22:30<strong>Last seen at 21:30</strong></div>
+    </section>
+    <div class="workspace">
+      <aside class="case-panel" aria-labelledby="cases-title"><div class="panel-heading"><h2 id="cases-title">Case files</h2><span>01—20</span></div><div class="case-list" id="case-list"></div></aside>
+      <section class="board" aria-labelledby="board-title">
+        <div class="board-toolbar"><h2 id="board-title">The house <span class="room-count" id="guest-total"></span></h2><div class="toolbar-actions"><button type="button" id="clear" class="small-button">Clear</button><button type="button" id="reset" class="small-button">Reset party</button></div></div>
+        <div class="house" id="house"></div>
+        <div class="legend" id="legend" aria-label="Legend"><span><span class="swatch"></span>Ring = clothing</span><span>AITU = student</span></div>
+        <section class="result" role="status" aria-live="polite" aria-atomic="true"><p id="result-label" class="result-label"></p><h3 id="result-title"></h3><p id="result-names"></p></section>
+        <details class="chain-details"><summary>View the jQuery chain</summary><pre id="chain"></pre></details>
+        <p class="hint">Click a guest to inspect or move them. Sort a room by arrival time; click again for picture order.</p>
+      </section>
+    </div>
+    <noscript>This assignment needs JavaScript enabled to build the party.</noscript>
+  </main>
+  <footer><span>Yerkebulan Abenov · IT-2511</span><span>Task 2 / Effects & animations · jQuery 3.7.1</span><a href="https://github.com/Abenovv/Assignment6-Web-technology">Source code ↗</a></footer>
+</body>
+</html>
