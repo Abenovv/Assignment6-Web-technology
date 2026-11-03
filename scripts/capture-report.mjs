@@ -23,7 +23,7 @@ writeFileSync('report/cases.json', JSON.stringify(records, null, 2));
 browser('open', 'http://127.0.0.1:8766/task2/');
 evaluate('runCase(2)'); await wait(400); screenshot('spotlight');
 evaluate('$("#clear").trigger("click")'); await wait(400); screenshot('clear');
-evaluate('$("#arman").trigger("click")'); await wait(450); screenshot('guest-card', 'body');
+evaluate('$("#arman").trigger("click")'); await wait(450); browser('screenshot', resolve('report/screenshots/guest-card.png'));
 evaluate('$(".move-button[data-target=balcony]").trigger("click")'); await wait(650); screenshot('moved');
 evaluate('runCase(0)'); await wait(400); screenshot('hall-after-move');
 evaluate('$("#reset").trigger("click"); $("#living-room .sort-button").trigger("click")'); await wait(500); screenshot('sorted');

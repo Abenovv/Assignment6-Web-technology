@@ -46,12 +46,12 @@ function openDetail(card) {
   const guest = info.guest;
   const start = card.find('.avatar').offset();
   const width = Math.min(410, $(window).width() - 32);
-  const height = Math.min(430, $(window).height() - 32);
+  const height = Math.min(480, $(window).height() - 32);
   const overlay = $('<div>', { class: 'detail-overlay' }).hide().appendTo('body');
   const panel = $('<section>', { class: 'detail-card', role: 'dialog', 'aria-modal': 'true', 'aria-labelledby': 'detail-title', tabindex: -1 })
     .css({ left: start.left - $(window).scrollLeft(), top: start.top - $(window).scrollTop(), width: 51, height: 51, opacity: 0.3 }).appendTo('body');
   const content = $('<div>', { class: 'detail-content' }).css('opacity', 0);
-  content.append($('<div>', { class: 'detail-header' }).append(card.find('.avatar').clone(), $('<div>').append(
+  content.append($('<div>', { class: 'detail-header' }).append(card.find('.avatar').clone().css('--clothing', colors[guest.color]), $('<div>').append(
     $('<h2>', { id: 'detail-title', text: guest.name }), $('<p>', { text: info.room.name + ' · Floor ' + info.room.floor }))));
   content.append($('<div>', { class: 'detail-info' }).append(
     $('<p>', { text: 'Came at ' + guest.time }), $('<p>', { text: guest.aitu ? 'AITU student' : 'Not an AITU student' }),

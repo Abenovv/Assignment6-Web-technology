@@ -1,0 +1,103 @@
+{
+  "passed": 24,
+  "results": [
+    {
+      "label": "Case 1",
+      "pass": true
+    },
+    {
+      "label": "Case 2",
+      "pass": true
+    },
+    {
+      "label": "Case 3",
+      "pass": true
+    },
+    {
+      "label": "Case 4",
+      "pass": true
+    },
+    {
+      "label": "Case 5",
+      "pass": true
+    },
+    {
+      "label": "Case 6",
+      "pass": true
+    },
+    {
+      "label": "Case 7",
+      "pass": true
+    },
+    {
+      "label": "Case 8",
+      "pass": true
+    },
+    {
+      "label": "Case 9",
+      "pass": true
+    },
+    {
+      "label": "Case 10",
+      "pass": true
+    },
+    {
+      "label": "Case 11",
+      "pass": true
+    },
+    {
+      "label": "Case 12",
+      "pass": true
+    },
+    {
+      "label": "Case 13",
+      "pass": true
+    },
+    {
+      "label": "Case 14",
+      "pass": true
+    },
+    {
+      "label": "Case 15",
+      "pass": true
+    },
+    {
+      "label": "Case 16",
+      "pass": true
+    },
+    {
+      "label": "Case 17",
+      "pass": true
+    },
+    {
+      "label": "Case 18",
+      "pass": true
+    },
+    {
+      "label": "Miras appears between Askar and Inkar",
+      "pass": true
+    },
+    {
+      "label": "Case 19",
+      "pass": true
+    },
+    {
+      "label": "Natasha is removed",
+      "pass": true
+    },
+    {
+      "label": "Case 20",
+      "pass": true
+    },
+    {
+      "label": "All avatars load locally",
+      "pass": true
+    },
+    {
+      "label": "No horizontal overflow",
+      "pass": true
+    }
+  ],
+  "task": 1,
+  "total": 24
+}

@@ -29,7 +29,7 @@
       <section class="board" aria-labelledby="board-title">
         <div class="board-toolbar"><h2 id="board-title">The house <span class="room-count" id="guest-total"></span></h2><div class="toolbar-actions"><button type="button" id="clear" class="small-button">Clear</button><button type="button" id="reset" class="small-button">Reset party</button></div></div>
         <div class="house" id="house"></div>
-        <div class="legend" id="legend" aria-label="Legend"><span><span class="swatch"></span>Ring = clothing</span><span>AITU = student</span></div>
+        <div class="legend" id="legend" role="group" aria-label="Legend"><span><span class="swatch"></span>Ring = clothing</span><span>AITU = student</span></div>
         <section class="result" role="status" aria-live="polite" aria-atomic="true"><p id="result-label" class="result-label"></p><h3 id="result-title"></h3><p id="result-names"></p></section>
         <details class="chain-details"><summary>View the jQuery chain</summary><pre id="chain"></pre></details>
         <p class="hint">Each case rebuilds the original party. Found guests jump once. Cases 18 and 19 change the guest list.</p>

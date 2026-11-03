@@ -1,0 +1,163 @@
+{
+  "passed": 39,
+  "results": [
+    {
+      "label": "Case 1",
+      "pass": true
+    },
+    {
+      "label": "Case 2",
+      "pass": true
+    },
+    {
+      "label": "Case 3",
+      "pass": true
+    },
+    {
+      "label": "Case 4",
+      "pass": true
+    },
+    {
+      "label": "Case 5",
+      "pass": true
+    },
+    {
+      "label": "Case 6",
+      "pass": true
+    },
+    {
+      "label": "Case 7",
+      "pass": true
+    },
+    {
+      "label": "Case 8",
+      "pass": true
+    },
+    {
+      "label": "Case 9",
+      "pass": true
+    },
+    {
+      "label": "Case 10",
+      "pass": true
+    },
+    {
+      "label": "Case 11",
+      "pass": true
+    },
+    {
+      "label": "Case 12",
+      "pass": true
+    },
+    {
+      "label": "Case 13",
+      "pass": true
+    },
+    {
+      "label": "Case 14",
+      "pass": true
+    },
+    {
+      "label": "Case 15",
+      "pass": true
+    },
+    {
+      "label": "Case 16",
+      "pass": true
+    },
+    {
+      "label": "Case 17",
+      "pass": true
+    },
+    {
+      "label": "Case 18",
+      "pass": true
+    },
+    {
+      "label": "Miras appears between Askar and Inkar",
+      "pass": true
+    },
+    {
+      "label": "Case 19",
+      "pass": true
+    },
+    {
+      "label": "Natasha is removed",
+      "pass": true
+    },
+    {
+      "label": "Case 20",
+      "pass": true
+    },
+    {
+      "label": "Spotlight matches stay bright",
+      "pass": true
+    },
+    {
+      "label": "Other guests fade to 20%",
+      "pass": true
+    },
+    {
+      "label": "Clear restores everyone",
+      "pass": true
+    },
+    {
+      "label": "Guest dialog opens with information",
+      "pass": true
+    },
+    {
+      "label": "Esc closes the dialog",
+      "pass": true
+    },
+    {
+      "label": "Arman moves to the end of the balcony",
+      "pass": true
+    },
+    {
+      "label": "Move updates the array",
+      "pass": true
+    },
+    {
+      "label": "Case 1 uses the moved party",
+      "pass": true
+    },
+    {
+      "label": "Living room sorts by arrival time",
+      "pass": true
+    },
+    {
+      "label": "Second sort restores picture order",
+      "pass": true
+    },
+    {
+      "label": "Five fast sorts end sorted",
+      "pass": true
+    },
+    {
+      "label": "Fast cases and Clear leave no animation queues",
+      "pass": true
+    },
+    {
+      "label": "Fast guest clicks keep one correct dialog",
+      "pass": true
+    },
+    {
+      "label": "Outside click closes the dialog",
+      "pass": true
+    },
+    {
+      "label": "Case during a flight settles the move",
+      "pass": true
+    },
+    {
+      "label": "All avatars load locally",
+      "pass": true
+    },
+    {
+      "label": "No horizontal overflow",
+      "pass": true
+    }
+  ],
+  "task": 2,
+  "total": 39
+}

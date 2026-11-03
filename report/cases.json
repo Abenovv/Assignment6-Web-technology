@@ -1,0 +1,122 @@
+[
+  {
+    "chain": "$('#hall .guest')",
+    "number": 1,
+    "result": "Arman, Sophia, Dias, Bekzat, Aruzhan, Saule",
+    "title": "Who is in the hall?"
+  },
+  {
+    "chain": "$('.guest.yellow, .guest.purple')",
+    "number": 2,
+    "result": "Arman, Sophia, Bekzat, Sergey, Natasha, Inkar",
+    "title": "Yellow or purple clothing"
+  },
+  {
+    "chain": "$('.floor[data-floor=\"2\"]').find('.guest.aitu')",
+    "number": 3,
+    "result": "Aigerim, Ivan, Sophia, Dias, Aruzhan",
+    "title": "AITU students upstairs"
+  },
+  {
+    "chain": "$('.guest:has(.thing-glasses), .guest:has(.thing-bag)')",
+    "number": 4,
+    "result": "Madina, Arman, Bekzat, Saule, Emma, Timur, Yerlan, Daniel, Zarina, Inkar",
+    "title": "Glasses or a bag"
+  },
+  {
+    "chain": "$('.guest:not(:has(.thing))')",
+    "number": 5,
+    "result": "Dias, Sergey, Natasha",
+    "title": "Nothing with them"
+  },
+  {
+    "chain": "$('.guest:has(.thing-phone):not(:has(.thing-bag))')",
+    "number": 6,
+    "result": "Aliya, Sophia, Aruzhan, Nurlan, Yerlan, Askar",
+    "title": "A phone, but no bag"
+  },
+  {
+    "chain": "$('.guest').filter(function () {\n    return $(this).attr('data-time') >= '20:30' && $(this).attr('data-time') <= '21:00';\n  })",
+    "number": 7,
+    "result": "Aigerim, Arman, Bekzat, Sergey, Natasha, Askar",
+    "title": "Arrived from 20:30 to 21:00"
+  },
+  {
+    "chain": "$('.guest:not(.aitu)').filter(function () {\n    return $(this).attr('data-time') > '21:00';\n  })",
+    "number": 8,
+    "result": "Aliya, Madina, Saule, Zarina",
+    "title": "After 21:00, not an AITU student"
+  },
+  {
+    "chain": "$('#askar').prev('.guest').add($('#askar').next('.guest'))",
+    "number": 9,
+    "result": "Natasha, Inkar",
+    "title": "Right next to Askar"
+  },
+  {
+    "chain": "$('.guests > .guest:last-child')",
+    "number": 10,
+    "result": "Ivan, Saule, Kamila, Inkar",
+    "title": "Last in each room"
+  },
+  {
+    "chain": "$('.guests > .guest:nth-child(3)')",
+    "number": 11,
+    "result": "Madina, Dias, Timur, Natasha",
+    "title": "Third in each room"
+  },
+  {
+    "chain": "$('#timur').nextAll('.guest')",
+    "number": 12,
+    "result": "Sergey, Yerlan, Kamila",
+    "title": "After Timur in his room"
+  },
+  {
+    "chain": "$('.guest.black').prev('.guest')",
+    "number": 13,
+    "result": "Aigerim, Madina, Nurlan, Natasha",
+    "title": "Right before someone in black"
+  },
+  {
+    "chain": "$('#aruzhan').closest('.room')",
+    "number": 14,
+    "result": "Hall",
+    "title": "Which room has Aruzhan?"
+  },
+  {
+    "chain": "$('.room').filter(function () {\n    return $(this).find('.guest').length < 6;\n  })",
+    "number": 15,
+    "result": "Balcony, Living room",
+    "title": "Rooms with fewer than 6 guests"
+  },
+  {
+    "chain": "$('.room:has(.thing-cup):not(:has(.thing-glasses))')",
+    "number": 16,
+    "result": "Balcony",
+    "title": "A cup, but no glasses in the room"
+  },
+  {
+    "chain": "$('.guest').filter(function () {\n    const time = $(this).attr('data-time');\n    return $(this).siblings('.guest').filter(function () {\n      return $(this).attr('data-time') < time;\n    }).length === 0;\n  })",
+    "number": 17,
+    "result": "Ivan, Dias, Nurlan, Daniel",
+    "title": "First to arrive in each room"
+  },
+  {
+    "chain": "makeGuest(miras).hide()\n    .insertAfter('#askar').fadeIn(duration(350))",
+    "number": 18,
+    "result": "Miras",
+    "title": "Miras joins Askar and Inkar"
+  },
+  {
+    "chain": "$('#natasha').fadeOut(duration(350), function () {\n    $(this).remove();\n    updateCounts();\n  })",
+    "number": 19,
+    "result": "Natasha",
+    "title": "Natasha goes home"
+  },
+  {
+    "chain": "$('.floor[data-floor=\"1\"] .guest:has(.thing-crumbs):not(:has(.thing-cup))')\n    .filter(function () {\n      const time = $(this).attr('data-time');\n      return time > '21:00' && time < '21:30';\n    }).filter(function () {\n      return $(this).prev('.guest.aitu').add($(this).next('.guest.aitu')).length > 0;\n    })",
+    "number": 20,
+    "result": "Zarina — downstairs, after 21:00 and before 21:30; crumbs, no cup, and an AITU neighbour.",
+    "title": "Who took the cake?"
+  }
+]
